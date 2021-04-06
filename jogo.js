@@ -235,8 +235,6 @@ const iniciarJogo = dificuldade => {
   mostrarPalavra();
 };
 
-elementos.botoes.dica.addEventListener('click', () => mostrarDica());
-
 const cadastrarPalavra = () => {
   for (const i in elementos.radioButton) {
     if (elementos.radioButton[i].checked) {
@@ -264,7 +262,7 @@ elementos.botoes.facil.addEventListener('click', () => iniciarJogo('facil'));
 elementos.botoes.medio.addEventListener('click', () => iniciarJogo('medio'));
 elementos.botoes.dificil.addEventListener('click', () => iniciarJogo('dificil'));
 elementos.botoes.reiniciar.addEventListener('click', () => novoJogo());
-
+elementos.botoes.dica.addEventListener('click', () => mostrarDica());
 elementos.botoes.irParaCadastro.addEventListener('click', () => mostrarTelaCadastro());
 elementos.botoes.cadastrar.addEventListener('click', () => cadastrarPalavra());
 
